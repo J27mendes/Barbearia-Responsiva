@@ -1,0 +1,149 @@
+body {
+    font-family: 'Permanent Marker', cursive;
+}
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label, .pRadio {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.inputPadrao {
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+fieldset {
+    border: none;
+}
+
+#enviar {
+    width: 50%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 1px 2px #000000;
+    border: ridge 2px #cccccc;
+    border-radius: 15px;
+    transition: 1s all;
+}
+
+#enviar:hover {
+    background: #f0d374;
+    color: #000000;
+    text-shadow: 1px 1px #ffffff;
+    transform: scale(0.9);
+}
+
+table {
+    position: absolute;
+    width: 30%;
+    top: 50%;
+    right: 10%;
+    margin: 20px 0 40px;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000;
+    text-align: center;
+    padding: 15px 15px;
+}
+
+.tableImg {
+    position: absolute;
+    top: 100%;
+    right: 16.5%;
+}
+
+.img-table {
+    width: 170px
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 0.5rem;
+        background: rgb(204,204,204);
+        background: linear-gradient(180deg,rgb(250, 248, 248)1%, rgb(216, 214, 214) 25%, rgb(250, 248, 248)75%);
+    }
+
+    .inputPadrao {
+        width: 80%;
+        margin-bottom: 1rem;
+        border: solid 0.1rem #000000;
+    }
+
+    .pRadio {
+        font-size: 18px;
+    }
+
+    .tableImg {
+        display: none;
+    }
+    table {
+        display: flex;
+        flex-direction: column;
+        position: static;
+        width: 100%;
+        align-items: center;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 939px) {
+    body {
+        margin-bottom: 0;
+    }
+    main {
+        display: block;
+        width: 100%;
+        text-align: left;
+        margin: 0;
+        padding: 0.5rem;
+        background: rgb(204,204,204);
+        background: linear-gradient(180deg,rgb(250, 248, 248)1%, rgb(216, 214, 214) 25%, rgb(250, 248, 248)75%);
+    }
+    .inputPadrao {
+        width: 80%;
+        margin-bottom: 1rem;
+        border: solid 0.1rem #000000;
+    }
+    .tableImg {
+        display: none;
+    }
+    table {
+        position: static;
+        width: 50%;
+        margin: 20px 0 40px;
+    }
+
+    footer {
+        margin-top: 5px;
+        display: block;
+        width: auto;
+    }
+
+}

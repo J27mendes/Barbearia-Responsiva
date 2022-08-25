@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Permanent Marker', cursive;
+}
+
+header {
+    padding: 20px 0;
+    background: rgb(204,204,204);
+    background: linear-gradient(90deg, rgba(204,204,204,1) 1%, rgb(245, 243, 243) 56%);
+}
+
+.img {
+    margin-left: 7%;
+}
+
+.container {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.nav-produtos {
+    position: absolute;
+    top: 40%;
+    right: 15%
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    font-size: 25px;
+    text-shadow: 2px 1px rgb(224, 214, 75);
+    transition: 0.2s;
+    border-bottom: 5px solid rgb(224, 214, 75);
+}
+
+.img-header {
+    width: 125px
+}
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 28%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    height: 430px;
+    box-sizing: border-box;
+    border: ridge 5px #cccccc;
+    border-radius: 7px;
+}
+.produtos h2 {
+    text-align: center;
+}
+
+.produtos li:hover{
+    border: 5px ridge rgb(224, 214, 75); 
+}
+
+.produtos li:hover h2 {
+    color: rgb(224, 214, 75);
+    font-size: 25px;
+    text-shadow: 1px 1px rgb(0, 0, 0); 
+    transition: 3s;
+}
+
+.produtos li:hover .descricao-produto {
+    font-size: 16px;
+    text-shadow: 2px 2px rgb(224, 214, 75); 
+    margin-top: 0;
+    transition: 3s;
+}
+
+.descricao-produto {
+    font-size: 14px;
+    font-weight: 800;
+    text-shadow: 1px 1px #ffffff;
+}
+
+.produtos li:hover .preco-produto {
+    font-size: 20px;
+    text-shadow: 2px 2px rgb(224, 214, 75); 
+    margin-top: 5px;
+    transition: 3s;
+}
+
+.preco-produto {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.imgs {
+    width: 200px;
+}
+.produtos li:hover .imgs {
+    padding: 0;
+    margin: 0;
+    transition: 3s;
+}
+
+.rodape {
+    text-align: center;
+    background: url("./image/bg.jpg");
+    padding: 40px 0;
+}
+
+.img-logo {
+    width: 50px;
+}
+
+.copyright {
+    display: inline-block;
+    position: relative;
+    top: -30px;
+    right: -3%;
+    color: #ffffff;
+    font-size: 15px;
+
+}
+@media screen and (max-width: 480px) {
+  
+    .container, aside {
+        display: block;
+        width: 100%
+    }
+    .produtos {
+        display: block;
+        margin-top: 0;
+        width: 100%;
+        background: rgb(204,204,204);
+        background: linear-gradient(180deg,rgb(250, 248, 248)1%, rgb(216, 214, 214) 56%);
+    }
+    
+    .produtos li {
+        display: block;
+        width: 80%;
+        margin: 1rem 2.2rem;
+        background: #ffffff;
+    }
+    .nav-produtos {
+        position: static;
+        display: block;
+        padding: 0.4em;
+    }
+    .img{
+        display: block;
+        width: auto;
+        text-align: center;     
+    }
+
+    .nav-produtos {
+        display: block;
+        width: auto;
+        text-align: center;
+    }
+    footer {
+        margin-top: 5px;
+        display: block;
+        width: auto;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 939px) {
+    body {
+        margin-bottom: 0;
+    }
+    .container {
+        display: block;
+        width: 100%
+    }
+    .img {
+        width: 10%;
+    }
+
+    .nav-produtos {
+        display: inline-block;
+        margin: 0.2rem 0;
+    }
+    main {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background: rgb(204,204,204);
+        background: linear-gradient(180deg,rgb(250, 248, 248)1%, rgb(216, 214, 214)35%, rgb(250, 248, 248) 90%);
+    }
+    
+    .produtos li {
+        width: 27%; 
+        margin: 1rem; 
+        justify-content: space-evenly;      
+        background: #ffffff;
+    }
+    .imgs {
+        width: 80%;
+    }
+    footer {
+        margin-top: 5px;
+        display: block;
+        width: auto;
+    }
+
+}
