@@ -264,6 +264,18 @@ aside {
     }
     
 }
+@media (max-width: 281px) {
+    .beneficios {
+        display: block;
+        width: auto;
+        margin-top: 350px;
+        text-align: center; 
+        margin-bottom: 4px;
+    } 
+    .video {
+        display: none;
+    }
+}
 
 
 
